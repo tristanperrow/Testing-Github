@@ -164,7 +164,7 @@ server.world.afterEvents.itemCompleteUse.subscribe((event) => {
         return;
     }
     let block = player.dimension.getBlockFromRay(player.getHeadLocation(), pvd, {
-        maxDistance: 250,
+        maxDistance: 150,
         includePassableBlocks: false,
     })
     if (block) {
