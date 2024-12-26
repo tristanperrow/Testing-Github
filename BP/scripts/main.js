@@ -4,6 +4,7 @@ let dim = server.world.getDimension("overworld");
 
 let useMap = new Map();
 
+let damage = 20;
 let explosionSize = 12;
 
 function spawnOnLine(vec1, vec2, numParticles) {
@@ -153,7 +154,7 @@ server.world.afterEvents.itemCompleteUse.subscribe((event) => {
         let entity = entities[1].entity;
         if (entity.nameTag != player.nameTag) {
             entity.applyKnockback(pvd.x, pvd.z, 5, 0.4);
-            entity.applyDamage(20);
+            entity.applyDamage(damage);
             // TODO make players take damage with `player.dimension.getPlayers({ location: player.location, maxDistance: 12 });`
             dim.createExplosion(entity.location, explosionSize, {
                 breaksBlocks: true,
