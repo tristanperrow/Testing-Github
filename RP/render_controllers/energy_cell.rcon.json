@@ -1,0 +1,35 @@
+{
+    "format_version": "1.20.10",
+    "render_controllers": {
+        "controller.render.energy_cell": {
+            "arrays": {
+                "textures": {
+                    "array.energy_cell_texture_frames": [
+                        "texture.energy_cell_1",
+                        "texture.energy_cell_2",
+                        "texture.energy_cell_3",
+                        "texture.energy_cell_4"
+                    ]
+                },
+                "geometries": {
+                    "array.energy_cell_geo_frames": [
+                        "geometry.energy_cell_1",
+                        "geometry.energy_cell_2",
+                        "geometry.energy_cell_3",
+                        "geometry.energy_cell_4"
+                    ]
+                }
+            },
+            "geometry": "array.energy_cell_geo_frames[v.pulse]",
+            "materials": [
+                {
+                    "*": "v.is_enchanted ? material.enchanted : material.default"
+                }
+            ],
+            "textures": [
+                "array.energy_cell_texture_frames[v.pulse]",
+                "texture.enchanted"
+            ]
+        }
+    }
+}

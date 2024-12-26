@@ -1,0 +1,37 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.energy_cannon",
+                "texture_width": 64,
+                "texture_height": 64
+            },
+            "bones": [
+                {
+                    "name": "rightItem",
+                    "texture_meshes": [
+                        {
+                            "local_pivot": [
+                                6,
+                                0,
+                                6
+                            ],
+                            "position": [
+                                2,
+                                1,
+                                -2
+                            ],
+                            "rotation": [
+                                0,
+                                -135,
+                                90
+                            ],
+                            "texture": "energy_cannon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

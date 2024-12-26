@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "Testing Real New Weapons",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"bridge_energy_cell": {
+			"textures": "textures/items/energy_cell1"
+		},
+		"bridge_energy_cannon": {
+			"textures": "textures/items/energy_cannon"
+		}
+	}
+}

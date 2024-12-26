@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.10",
+    "render_controllers": {
+        "controller.render.energy_cannon": {
+            "arrays": {
+                "textures": {
+                    "array.energy_cannon_texture_frames": [
+                        "texture.energy_cannon"
+                    ]
+                },
+                "geometries": {
+                    "array.energy_cannon_geo_frames": [
+                        "geometry.energy_cannon"
+                    ]
+                }
+            },
+            "geometry": "array.energy_cannon_geo_frames[0]",
+            "materials": [
+                {
+                    "*": "v.is_enchanted ? material.enchanted : material.default"
+                }
+            ],
+            "textures": [
+                "array.energy_cannon_texture_frames[0]",
+                "texture.enchanted"
+            ]
+        }
+    }
+}

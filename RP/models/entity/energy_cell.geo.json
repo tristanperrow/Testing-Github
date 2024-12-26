@@ -1,0 +1,133 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.energy_cell_1",
+                "texture_width": 32,
+                "texture_height": 32
+            },
+            "bones": [
+                {
+                    "name": "rightItem",
+                    "texture_meshes": [
+                        {
+                            "local_pivot": [
+                                6,
+                                0,
+                                6
+                            ],
+                            "position": [
+                                2,
+                                1,
+                                -2
+                            ],
+                            "rotation": [
+                                0,
+                                -135,
+                                90
+                            ],
+                            "texture": "energy_cell_1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.energy_cell_2",
+                "texture_width": 32,
+                "texture_height": 32
+            },
+            "bones": [
+                {
+                    "name": "rightItem",
+                    "texture_meshes": [
+                        {
+                            "local_pivot": [
+                                6,
+                                0,
+                                6
+                            ],
+                            "position": [
+                                2,
+                                1,
+                                -2
+                            ],
+                            "rotation": [
+                                0,
+                                -135,
+                                90
+                            ],
+                            "texture": "energy_cell_2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.energy_cell_3",
+                "texture_width": 32,
+                "texture_height": 32
+            },
+            "bones": [
+                {
+                    "name": "rightItem",
+                    "texture_meshes": [
+                        {
+                            "local_pivot": [
+                                6,
+                                0,
+                                6
+                            ],
+                            "position": [
+                                2,
+                                1,
+                                -2
+                            ],
+                            "rotation": [
+                                0,
+                                -135,
+                                90
+                            ],
+                            "texture": "energy_cell_3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.energy_cell_4",
+                "texture_width": 32,
+                "texture_height": 32
+            },
+            "bones": [
+                {
+                    "name": "rightItem",
+                    "texture_meshes": [
+                        {
+                            "local_pivot": [
+                                6,
+                                0,
+                                6
+                            ],
+                            "position": [
+                                2,
+                                1,
+                                -2
+                            ],
+                            "rotation": [
+                                0,
+                                -135,
+                                90
+                            ],
+                            "texture": "energy_cell_4"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

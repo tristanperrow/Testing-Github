@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.10",
+    "animations": {
+        "animation.energy_cannon.wield": {
+            "loop": true,
+            "override_previous_animation": true,
+            "bones": {
+                "rightItem": {
+                    "position": [
+                        " c.is_first_person ? -16 : 0.5",
+                        "c.is_first_person ? -6 : 13",
+                        "c.is_first_person ? -6 : 10"
+                    ],
+                    "rotation": [
+                        "c.is_first_person ? 38 + 180 : 38 + 90",
+                        "c.is_first_person ? -120 + 180 : 0",
+                        "c.is_first_person ? -63 : 0"
+                    ],
+                    "scale": [
+                        "c.is_first_person ? 0.5 : 0.375",
+                        "c.is_first_person ? 0.5 : 0.375",
+                        "c.is_first_person ? 0.5 : 0.375"
+                    ]
+                }
+            }
+        }
+    }
+}

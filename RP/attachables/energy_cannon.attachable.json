@@ -1,0 +1,30 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "bridge:energy_cannon",
+            "materials": {
+                "default": "entity",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "energy_cannon": "textures/items/energy_cannon",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "energy_cannon": "geometry.energy_cannon"
+            },
+            "animations": {
+                "wield": "animation.energy_cannon.wield"
+            },
+            "scripts": {
+                "animate": [
+                    "wield"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.energy_cannon"
+            ]
+        }
+    }
+}

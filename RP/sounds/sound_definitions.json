@@ -1,0 +1,17 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"nano.cannon.fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/items/cannon_fire"
+			]
+		},
+		"nano.cannon.charge": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/items/cannon_charge"
+			]
+		}
+	}
+}

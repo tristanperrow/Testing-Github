@@ -1,0 +1,67 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"nanopoison"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.42"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "Testing Real New Weapons",
+		"description": "idk anymore man",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "11693843-fa36-4de7-83fb-97c059319c7d",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "bf268b09-c378-4886-8d00-43d5a0f4a125",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "3b509a7f-41bd-4d82-ab54-8a702addbb2c",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "cc774b51-3c8f-4434-95d1-452c39cb83a6",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.17.0-beta"
+		}
+	]
+}

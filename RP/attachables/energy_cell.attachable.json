@@ -1,0 +1,39 @@
+{
+    "format_version": "1.20.50",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "bridge:energy_cell",
+            "materials": {
+                "default": "entity",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "energy_cell_1": "textures/items/energy_cell1",
+                "energy_cell_2": "textures/items/energy_cell2",
+                "energy_cell_3": "textures/items/energy_cell3",
+                "energy_cell_4": "textures/items/energy_cell4",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "energy_cell_1": "geometry.energy_cell_1",
+                "energy_cell_2": "geometry.energy_cell_2",
+                "energy_cell_3": "geometry.energy_cell_3",
+                "energy_cell_4": "geometry.energy_cell_4"
+            },
+            "animations": {
+                "pulse": "animation.energy_cell.pulse"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "v.pulse = math.mod(math.floor(q.life_time * 6), 4) + 1;"
+                ],
+                "animate": [
+                    "pulse"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.energy_cell"
+            ]
+        }
+    }
+}
