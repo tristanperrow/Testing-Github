@@ -1,2 +1,2 @@
 # Testing Github
- Some weapon testing that is getting put on github
+ Some minecraft addon weapon testing that is now on github
