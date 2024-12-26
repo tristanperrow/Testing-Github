@@ -4,6 +4,8 @@ let dim = server.world.getDimension("overworld");
 
 let useMap = new Map();
 
+let explosionSize = 12;
+
 function spawnOnLine(vec1, vec2, numParticles) {
     if (numParticles < 2) {
         console.error("Number of particles must be at least 2.");
@@ -153,7 +155,7 @@ server.world.afterEvents.itemCompleteUse.subscribe((event) => {
             entity.applyKnockback(pvd.x, pvd.z, 5, 0.4);
             entity.applyDamage(20);
             // TODO make players take damage with `player.dimension.getPlayers({ location: player.location, maxDistance: 12 });`
-            dim.createExplosion(entity.location, 12, {
+            dim.createExplosion(entity.location, explosionSize, {
                 breaksBlocks: true,
                 causesFire: true,
                 source: player
@@ -169,7 +171,7 @@ server.world.afterEvents.itemCompleteUse.subscribe((event) => {
         // spawn particles
         spawnOnLine(player.getHeadLocation(), block.block.location, Math.floor(distance(player.getHeadLocation(), block.block.location) / 3) + 2);
         // logic
-        dim.createExplosion(block.block.location, 12, {
+        dim.createExplosion(block.block.location, explosionSize, {
             breaksBlocks: true,
             causesFire: true,
             source: player
