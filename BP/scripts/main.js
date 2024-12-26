@@ -148,21 +148,23 @@ server.world.afterEvents.itemCompleteUse.subscribe((event) => {
         includePassableBlocks: false,
     })
     if (entities.length > 1) {
-        // spawn particles
-        spawnOnLine(player.getHeadLocation(), entities[1].entity.location, Math.floor(entities[1].distance / 3) + 2);
-        // logic
-        let entity = entities[1].entity;
-        if (entity.nameTag != player.nameTag) {
-            entity.applyKnockback(pvd.x, pvd.z, 5, 0.4);
-            entity.applyDamage(damage);
-            // TODO make players take damage with `player.dimension.getPlayers({ location: player.location, maxDistance: 12 });`
-            dim.createExplosion(entity.location, explosionSize, {
-                breaksBlocks: true,
-                causesFire: true,
-                source: player
-            })
+        spawnOnLine(player.getHeadLocation(), entities[entities.length - 1].entity.location, Math.floor(entities[1].distance / 3) + 2);
+        for (let i = 0; i < entities.length; i++) {
+            let entity = entities[i].entity;
+            if (entity.nameTag != player.nameTag) {
+                entity.applyKnockback(pvd.x, pvd.z, 5, 0.4);
+                entity.applyDamage(damage);
+                // TODO make players take damage with `player.dimension.getPlayers({ location: player.location, maxDistance: 12 });`
+                /*
+                dim.createExplosion(entity.location, explosionSize, {
+                    breaksBlocks: true,
+                    causesFire: true,
+                    source: player
+                })
+                */
+            }
         }
-        return;
+        //return;
     }
     let block = player.dimension.getBlockFromRay(player.getHeadLocation(), pvd, {
         maxDistance: 150,
