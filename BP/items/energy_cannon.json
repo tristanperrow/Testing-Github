@@ -14,7 +14,8 @@
 				"movement_modifier": 0.2,
 				"use_duration": 4.85
 			},
-			"minecraft:use_animation": "bow"
+			"minecraft:use_animation": "bow",
+			"minecraft:hover_text_color": "red"
 		}
 	}
 }

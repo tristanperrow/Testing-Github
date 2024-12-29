@@ -8,9 +8,10 @@
 			}
 		},
 		"components": {
-			"minecraft:max_stack_size": 1,
+			"minecraft:max_stack_size": 16,
 			"minecraft:hand_equipped": true,
-			"minecraft:icon": "bridge_energy_cell"
+			"minecraft:icon": "bridge_energy_cell",
+			"minecraft:hover_text_color": "red"
 		}
 	}
 }

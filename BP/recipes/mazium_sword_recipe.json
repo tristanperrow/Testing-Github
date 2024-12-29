@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bridge:mazium_sword_recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"M": {
+				"item": "bridge:mazium_ingot"
+			},
+			"S": {
+				"item": "stick"
+			}
+		},
+		"pattern": [
+			" M ",
+			" M ",
+			" S "
+		],
+		"result": {
+			"item": "bridge:mazium_sword",
+			"count": 1
+		}
+	}
+}

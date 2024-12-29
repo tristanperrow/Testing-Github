@@ -426,3 +426,26 @@ server.system.afterEvents.scriptEventReceive.subscribe((event) => {
         showMenu(event.sourceEntity, list);
     }
 });
+
+server.world.afterEvents.playerBreakBlock.subscribe((event) => {
+    let item = event.player.getComponent(server.EntityComponentTypes.Equippable).getEquipmentSlot(server.EquipmentSlot.Mainhand).getItem();
+    if (!item) return;
+    if (item.typeId != "bridge:mazium_pickaxe") return;
+    let durComp = item.getComponent(server.ItemComponentTypes.Durability);
+    if (!durComp) return;
+    let enchComp = item.getComponent(server.ItemComponentTypes.Enchantable);
+    if (enchComp) {
+        if (enchComp.getEnchantment("unbreaking")) {
+            let dc = item.getComponent(server.ItemComponentTypes.Durability).getDamageChance(enchComp.getEnchantment("unbreaking").level);
+            let rn = Math.random() * 100
+            if (rn <= dc) {
+                durComp.damage += 1;
+            } else {
+                durComp.damage += 1;
+            }
+        } else {
+            durComp.damage += 1;
+        }
+        event.player.getComponent(server.EntityComponentTypes.Equippable).setEquipment(server.EquipmentSlot.Mainhand, item);
+    }
+})

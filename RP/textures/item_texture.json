@@ -7,6 +7,15 @@
 		},
 		"bridge_energy_cannon": {
 			"textures": "textures/items/energy_cannon"
+		},
+		"bridge_mazium_sword": {
+			"textures": "textures/items/mazium_sword"
+		},
+		"bridge_mazium_ingot": {
+			"textures": "textures/items/mazium_ingot"
+		},
+		"bridge_mazium_pickaxe": {
+			"textures": "textures/items/mazium_pickaxe"
 		}
 	}
 }

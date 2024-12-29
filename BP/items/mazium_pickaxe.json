@@ -1,0 +1,70 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bridge:mazium_pickaxe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.pickaxe"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 5001,
+				"damage_chance": {
+					"max": 100,
+					"min": 40
+				}
+			},
+			"minecraft:icon": "bridge_mazium_pickaxe",
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:iron_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					},
+					{
+						"items": [
+							"bridge:mazium_pickaxe"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:damage": 6,
+			"minecraft:enchantable": {
+				"value": 24,
+				"slot": "pickaxe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('stone', 'metal', 'diamond_pick_diggable')"
+						},
+						"speed": 21
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 21
+					},
+					{
+						"block": "minecraft:sandstone",
+						"speed": 21
+					}
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_pickaxe"
+				]
+			},
+			"minecraft:hover_text_color": "red"
+		}
+	}
+}

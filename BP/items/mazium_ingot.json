@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bridge:mazium_ingot",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "bridge_mazium_ingot",
+			"minecraft:hover_text_color": "red"
+		}
+	}
+}
